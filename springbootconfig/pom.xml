@@ -8,12 +8,11 @@
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
-	<groupId>com.digitalinnovation.one</groupId>
-	<artifactId>springboot</artifactId>
+	<groupId>com.digitalinnovationone</groupId>
+	<artifactId>springbootconfig</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringbootCurso</name>
-	<description> project for Spring Boot curso</description>
+	<name>springbootconfig</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
