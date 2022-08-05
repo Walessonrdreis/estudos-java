@@ -11,10 +11,18 @@ public class AppController {
     @Value("${app.message}") //injetando todos os valores, cujo o inicio seja app.message
     private String appMessage;
 
+    @Value("${ENV_DB_URL:NENHUMA}")
+    private String dbEnvironmentVariable;
+
     @GetMapping("/") //fazer a exibicao direta no navegador a partir do contexto de barra do navegador
     //Toda vez que abrir o navegador ele vai exibir a mensagem de ambiente de producao ou desenvolvimento
     public String getAppMessage(){
         return appMessage;
+    }
+
+    @GetMapping("/envVariable")
+    public String getEnvironmentVariable(){
+        return "A seguinte variavel de ambiente foi passada: "+dbEnvironmentVariable;
     }
 
 }
