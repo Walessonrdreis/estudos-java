@@ -7,20 +7,20 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Configuration // indicando para o string que esse é um arquivo de configuração
-@ConfigurationProperties("spring.datasource") // Mapeia todas as propriedades presentes no link (prefixos)indicado no parâmetro
-//Adicionada anotações lombok para não poluir o código com getters e ‘setters’
+@Configuration // indicando para o string que esse e um arquivo de configuracao
+@ConfigurationProperties("spring.datasource") // Mapeia todas as propriedades presentes no link (prefixos)indicado no parametro
+//Adicionada anotacoes lombok para nao poluir o codigo com getters e ‘setters’
 @Getter //quando o projeto for compilado ele recebe todos os getters e setters
 @Setter
 public class DBConfiguration {
-    //Mapeando propriedades iniciais do arquivo de configuração de desenvolvimento
+    //Mapeando propriedades iniciais do arquivo de configuracaoo de desenvolvimento
     private String driverClassName;
     private String url;
     private String username;
     private String password;
     //Desenvolvimento
     @Profile("dev") //pegar todas as propriedades de configuração com a propriedade <--
-    @Bean // para mostrar todo esse conteúdo sendo mapeado logo na subida do sistema
+    @Bean
 
     public String testDatabaseConnection(){
         System.out.println("DB connection dor DEV - H2");
@@ -29,7 +29,7 @@ public class DBConfiguration {
         return "DB Connection to H2_TEST - Test instance";
     }
 
-    //Produção
+    //Producao
     @Profile("prod")
     @Bean
 
