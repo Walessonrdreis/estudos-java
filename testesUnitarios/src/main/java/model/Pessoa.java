@@ -1,21 +1,31 @@
 package model;
 
-
+import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
+@Data
 public class Pessoa {
-    private String nome = "joaozinho";
-    private LocalDate dataNascimento = LocalDate.of(2004,1,1);
-    private int idade = 19;
+    private String nome;
+    private LocalDate nascimento;
 
 
-    public Pessoa(String nome, LocalDate of) {
+    public Pessoa(String nome, LocalDate nascimento) {
+        this.nome = nome;
+        this.nascimento = nascimento;
+    }
 
+    public int getIdade(){
+        return (int) ChronoUnit.YEARS.between(nascimento,LocalDate.now());
+    }
+    public void setIdade(){
+        System.out.println(getIdade() + "Anos de idade");
     }
 
     public boolean ehMaiorDeIdade() {
 
-        return idade >= 18;
+        return getIdade() >= 18;
     }
 }
