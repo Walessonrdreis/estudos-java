@@ -25,4 +25,14 @@ public class AssertionsTeste {
 
         Assertions.assertNull(pessoa);
     }
+
+    @Test
+    void validaValorBoleano1(){
+        int numero1 = 10;
+        int numero2 = 11;
+
+        boolean teste = numero1 != numero2;
+        Assertions.assertTrue(teste, "Sao iguais");
+    }
+
 }
