@@ -11,7 +11,9 @@ public class PessoaTeste {
     @Test
     void deveCalcularIdadeCorretamente(){
         Pessoa jessica = new Pessoa("Jéssica", LocalDate.of(2000,1,1));
-        Assertions.assertEquals(22, jessica.getIdade());
+        int idadeEsperada = 22;
+
+        Assertions.assertEquals(idadeEsperada, jessica.getIdade());
     }
     @Test
     void validaVerificacaoDeMaiorIdade1(){

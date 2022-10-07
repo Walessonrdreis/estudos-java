@@ -10,6 +10,8 @@ import java.time.temporal.ChronoUnit;
 public class Pessoa {
     private String nome;
     private LocalDate nascimento;
+    private String primeiroNome;
+    private String segundoNome;
 
 
     public Pessoa(String nome, LocalDate nascimento) {
