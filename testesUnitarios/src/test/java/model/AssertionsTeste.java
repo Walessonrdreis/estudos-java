@@ -40,4 +40,16 @@ public class AssertionsTeste {
 
     }
 
+    @Test
+    void validaMaiorIdade(){
+        String nome = "Joao";
+        int idadeJoao = 18;
+
+        boolean temMaiorIdade = idadeJoao >= 18;
+
+
+        assertTrue(temMaiorIdade, nome + " Nao eh maior de idade");
+
+    }
+
 }
