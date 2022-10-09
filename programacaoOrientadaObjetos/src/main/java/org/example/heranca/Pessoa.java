@@ -12,4 +12,8 @@ public class Pessoa {
         this.cpf = _cpf;
         this.data_nascimento = _data;
     }
+
+    public double tirarCopias(int qtd){
+        return 0.10 * (double) qtd;
+    }
 }

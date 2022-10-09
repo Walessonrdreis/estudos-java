@@ -10,4 +10,9 @@ public class Aluno extends Pessoa {
     }
 
     public String matricula;
+
+    @Override
+    public double tirarCopias(int qtd) {
+        return 0.07 * (double) qtd;
+    }
 }
