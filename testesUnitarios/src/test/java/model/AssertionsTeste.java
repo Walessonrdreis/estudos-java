@@ -34,7 +34,7 @@ public class AssertionsTeste {
         assertTrue(teste, "Sao iguais");
     }
     @Test
-    void validaValorBoleano2(){
+    void validaTamanhoArray(){
         int[] alunoNota = {7, 6, 8,9};
         assertTrue(alunoNota.length == 4,"Nao possui o tamanho indicado, tamanho esperado: "+alunoNota.length);
 
@@ -44,11 +44,16 @@ public class AssertionsTeste {
     void validaMaiorIdade(){
         String nome = "Joao";
         int idadeJoao = 18;
-
         boolean temMaiorIdade = idadeJoao >= 18;
-
-
         assertTrue(temMaiorIdade, nome + " Nao eh maior de idade");
+
+    }
+
+    @Test
+    void validaNumeroMinDeCaracterePassword(){
+        int numeroCaractere = 8;
+        boolean caractereMinimo = numeroCaractere >= 8;
+        assertTrue(caractereMinimo, "numero de caracteres menor que o exigido");
 
     }
 
