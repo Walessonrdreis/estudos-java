@@ -55,6 +55,12 @@ public class AssertionsTeste {
         boolean caractereMinimo = numeroCaractere >= 8;
         assertTrue(caractereMinimo, "numero de caracteres menor que o exigido");
 
+    }@Test
+    void validaNumeroMaxDeCaracterePassword(){
+        int numeroCaractere = 20;
+        boolean caractereMaximo = numeroCaractere <= 22;
+        assertTrue(caractereMaximo, "numero de caracteres eh maior que o exigido");
+
     }
 
 }
