@@ -10,6 +10,7 @@
         <module name="programacaoOrientadaObjetos" />
         <module name="projeto" />
         <module name="estruturasCondicionais" />
+        <module name="estruturasDeRepeticao" />
         <module name="springboot" />
         <module name="testesUnitarios" />
       </profile>
