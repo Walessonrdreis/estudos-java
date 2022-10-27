@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="programacaoOrientadaObjetos" />
         <module name="projeto" />
         <module name="estruturasCondicionais" />
+        <module name="tratamentosDeExecoes" />
+        <module name="programacaoOrientadaObjetos" />
         <module name="estruturasDeRepeticao" />
         <module name="springboot" />
         <module name="testesUnitarios" />
